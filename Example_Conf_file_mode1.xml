@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- this is an example of the configuration file for mode 1 -->
+<!-- bidding functions: ["truth_telling_bidding","random_bidding","Optimal_bidding2","Optimal_bidding1","constant_bidding","linear_bidding"] -->
+<!-- you specify the mode -->
+<!-- the number of DSPs -->
+<!-- for each DSP you have to specify the campaigns it manages, for each campaign the budget and which function it uses and for each function the parameters needed. Note that only the functions "optimal_bidding1" and "optimal_bidding2" need user defined parameters: lambda and c -->
+<!-- Note that the budget for each campaign in mode1 should not exceed the costs for that campaigns in hystorical data: -->
+<!-- campaigns["1458","2259","2261","2821","2997","3358","3386","3427","3476"]-->
+<!-- and corresponding maximum of budget[45216454,43497557,28795996,68257100,3059109,34159766,45715525,46356518,43627585]-->
+<DSPs> 
+	 
+         <mode name="mode1">
+         <DSPs_number>9</DSPs_number>
+	 
+
+         <DSP name="DSP1">
+		    <Compaing  id="1458">
+			      <budget>  45216454</budget>
+			      <bidding_function name="constant_bidding"> 
+			      </bidding_function>
+		    </Compaing>
+          </DSP>
+         <DSP name="DSP2">
+                    <Compaing  id="2259">
+			      <budget>  43497557</budget>
+			      <bidding_function name="random_bidding"> 
+			      </bidding_function>
+		    </Compaing>
+          </DSP>
+         <DSP name="DSP3">
+                    <Compaing  id="2261">
+			      <budget> 28795996</budget>
+			      <bidding_function name="Optimal_bidding1"> 
+                              <parameter name="c">20 </parameter>			                
+                              <parameter name="lamda">0.00000052 </parameter>
+			      </bidding_function>
+		    </Compaing>
+     	 </DSP>
+
+
+
+	 <DSP name="DSP4">
+		     <Compaing  id="2821">
+			      <budget>  68257100</budget>
+			      <bidding_function name="linear_bidding"> 
+			      </bidding_function>
+		    </Compaing>
+          </DSP>
+         <DSP name="DSP5">
+                    <Compaing  id="2997">
+			      <budget> 3059109</budget>
+			      <bidding_function name="truth_telling_bidding"> 
+			      </bidding_function>
+		    </Compaing>
+         </DSP>
+        <DSP name="DSP6">
+                    <Compaing  id="3358">
+			      <budget> 34159766</budget>
+			      <bidding_function name="constant_bidding"> 
+			      </bidding_function>
+		    </Compaing>
+     	 </DSP>
+
+
+
+
+	 <DSP name="DSP7">
+		     <Compaing  id="3386">
+			      <budget> 45715525</budget>
+			      <bidding_function name="Optimal_bidding1"> 
+                              <parameter name="c">50 </parameter>			                
+                              <parameter name="lamda">0.00000052 </parameter>
+			      </bidding_function>
+		    </Compaing>
+         </DSP>
+        <DSP name="DSP8">
+                    <Compaing  id="3427">
+			      <budget> 46356518</budget>
+			      <bidding_function name="Optimal_bidding2"> 
+                              <parameter name="c">20 </parameter>			                
+                              <parameter name="lamda">0.00000052 </parameter>
+			      </bidding_function>
+		    </Compaing>
+       </DSP>
+       <DSP name="DSP9">
+                    <Compaing  id="3476">
+			      <budget>  43627585</budget>
+			      <bidding_function name="linear_bidding"> 
+			      </bidding_function>
+		    </Compaing>
+     	 </DSP>
+      	
+     	</mode>
+
+</DSPs>
