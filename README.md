@@ -5,4 +5,5 @@ We define also the mode of simulation we want to perform:
   -Mode1: in this mode we run a campaign based simulation 
   -Mode2: in this mode we run a campaign less simulation
 2: Simulator.py: this is the main file that we run after we define our parameters in configuration file. In which we do the following:
+    
     - read 
