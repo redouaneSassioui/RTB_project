@@ -23,8 +23,8 @@ In this project is, we have implemented a RTB sumilator using IpinYou public dat
 
 6- Data-statistics: here we compute the statistics of the historical data: CTR, CVR...
 
-7- Auctions: here we define two functions, auction_based_adviser for mode1 and  auction_adviser_less for mode2. note that for speed raisons, we  tryed to implement those function in parrallele fashion. 
+7- Auctions: here we define two functions, auction_based_adviser for mode1 and  auction_adviser_less for mode2. note that for speed raisons, we  tryed to implement those function with parallel technique. 
 
-8- Generate_statistics.py: here we define two functions that generete statistics and write them in an output. generate_statistics_based_adviser and generate_statistics_adviser_Less. 
+8- Generate_statistics.py: here we define two functions that generete statistics and write them in an html output. generate_statistics_based_adviser and generate_statistics_adviser_Less. 
 
-Finaly, note that tha data shoud be prepared based on the processing of this link https://github.com/wnzhang/make-ipinyou-data
+Finaly, note that tha data shoud be prepared based on the processing done in this link https://github.com/wnzhang/make-ipinyou-data
