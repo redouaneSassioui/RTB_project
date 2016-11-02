@@ -1,4 +1,4 @@
-# RTB_project
+# RTB simulator
 In this project is, we have implemented a RTB sumilator using IpinYou public data set. The simulator has the following components:
 
 
