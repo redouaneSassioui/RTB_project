@@ -13,7 +13,7 @@ In this project is, we have implemented a RTB sumilator using IpinYou public dat
     
    2.2 Estimate the pCTR of all test files for each campaign and save the result in separate file and compute data statstics for each campaign (line 29-50). Note that this step should be run one time and just use the saved file in future simulation in order to optimise simulation time. 
    
-    2.3 depending on the simulation mode, we run the auction and genrate the statistics. (Line 52-80)
+   2.3 depending on the simulation mode, we run the auction and generate the statistics. (Line 52-80)
     
 3-XML-parser: this is the program that reads the xml file and output the simulation mode and the DSP list. We represent a DSP as a class with different attributes so that each dsp is an object of this class. The output is a list of DSP objects. IN this file we define many functions that check the configuration file and garantees that the user has properly entred the file parameters.
 
