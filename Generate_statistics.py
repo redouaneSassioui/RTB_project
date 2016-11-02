@@ -38,7 +38,7 @@ def generate_statistics_based_adviser(statistics_set,DSP_list,test_stats,report_
             CVR=0
         output_data=output_data.append(pd.DataFrame([[dsp.name,campaign,strategy,imprs,clicks,convs,wining_ratio,CTR,CVR]],
                       columns=['dsp','campaigns','bidding function','imps','clicks','Convs','win ratio','CTR','CVR']),ignore_index=True)
-    output_data.to_html('../Report/Mode1/Report.html')
+    output_data.to_html(report_path+'/'+report_name+'.html')
     
 
 
@@ -75,8 +75,8 @@ def generate_statistics_adviser_Less(statistics_set,DSP_list,report_name,report_
         output_strategy=output_strategy.append(pd.DataFrame([[strategy,imprs,wining_ratio]],
                       columns=['Bidding function','imps','wining ratio']),ignore_index=True) 
     
-    output_dsp.to_html('../Report/Mode2/dsps_Report.html',index=False)
-    output_campaign.to_html('../Report/Mode2/campaigns_Report.html',index=False)
-    output_strategy.to_html('../Report/Mode2/strategy_Report.html',index=False)
+    output_dsp.to_html(report_path+'/'+report_name+'_dsps.html',index=False)
+    output_campaign.to_html(report_path+'/'+report_name+'_campaigns.html',index=False)
+    output_strategy.to_html(report_path+'/'+report_name+'_strategy.html',index=False)
     
       
